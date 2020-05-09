@@ -25,8 +25,8 @@ Variables
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.2rem;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --lightShadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  --darkShadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.3);
   --mainBorderRadius: 0.25rem;
   --smallWidth: 85vw;
   --maxWidth: 40rem;
