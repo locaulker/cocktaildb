@@ -3,7 +3,7 @@
 Fonts
 ======
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+condensed:300i,400|Solway:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Raleway:100,200,400,600&display=swap"rel="stylesheet");
 /* 
 ====== 
 Variables 
@@ -14,7 +14,7 @@ Variables
   --primaryColor: #476a2e;
   --primaryDarkColor: #c02c03;
   --primaryFont: "Open Sans Condensed", sans-serif;
-  --slantedFont: "Solway", serif;
+  --slantedFont: "Raleway", sans-serif;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBackground: #f8f8f8;
@@ -60,7 +60,7 @@ h6 {
   font-family: var(--slantedFont);
   margin-bottom: 1.25rem;
   /* letter-spacing: var(--mainSpacing); */
-  font-weight: 400;
+  font-weight: 600;
 }
 p {
   margin-bottom: 1.25rem;
