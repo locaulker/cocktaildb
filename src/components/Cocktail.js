@@ -1,5 +1,7 @@
-import React from "react";
+import React from "react"
 
-export default function Cocktail() {
-  return <h1>cocktail component</h1>;
+const Cocktail = () => {
+  return <h1>cocktail component</h1>
 }
+
+export default Cocktail
