@@ -60,7 +60,14 @@ h6 {
   font-family: var(--slantedFont);
   margin-bottom: 1.25rem;
   /* letter-spacing: var(--mainSpacing); */
+  font-weight: normal;
+}
+h1 {
   font-weight: 600;
+}
+h3 span {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 p {
   margin-bottom: 1.25rem;
