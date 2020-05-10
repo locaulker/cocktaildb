@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 
 const SingleCocktail = () => {
   const { id } = useParams()
@@ -17,7 +17,7 @@ const SingleCocktail = () => {
 
         if (data.drinks) {
           const {
-            strDrinks: name,
+            strDrink: name,
             strDrinkThumb: image,
             strAlcoholic: info,
             strDrinkCategory: category,
@@ -59,7 +59,50 @@ const SingleCocktail = () => {
     getCocktail()
   }, [id])
 
-  return <h1>single cocktail page id: {id}</h1>
+  if (loading) {
+    return <h2 className="section-title">Loading...</h2>
+  }
+  if (!cocktail) {
+    return <h2 className="section-title">No Cocktail info to display</h2>
+  } else {
+    const {
+      name,
+      image,
+      category,
+      info,
+      glass,
+      instructions,
+      ingredients,
+    } = cocktail
+    return (
+      <section className="section cocktail-section">
+        <h2 className="section-title">{name}</h2>
+        <Link to="/" className="btn btn-primary">
+          Back Home
+        </Link>
+        <div className="drink">
+          <img src={image} alt={name} />
+          <div className="drink-info">
+            <p>Name: {name}</p>
+            <p>Category: {category}</p>
+            <p>Info: {info}</p>
+            <p>Glass: {glass}</p>
+            <p>Instructions: {instructions}</p>
+
+            <p>
+              Ingredients:
+              {ingredients.map((item, index) => {
+                return item ? <span key={index}>{item}</span> : null
+              })}
+            </p>
+          </div>
+        </div>
+        <Link to="/" className="btn btn-primary">
+          Back Home
+        </Link>
+      </section>
+    )
+  }
 }
 
 export default SingleCocktail
