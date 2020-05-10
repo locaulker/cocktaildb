@@ -77,9 +77,6 @@ const SingleCocktail = () => {
     return (
       <section className="section cocktail-section">
         <h2 className="section-title">{name}</h2>
-        <Link to="/" className="btn btn-primary">
-          Back Home
-        </Link>
         <div className="drink">
           <img src={image} alt={name} />
           <div className="drink-info">
